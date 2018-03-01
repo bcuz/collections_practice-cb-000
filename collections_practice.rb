@@ -51,7 +51,7 @@ def add_s(arr)
   arr.each_with_index.collect do |item, i|
     # x+=1
 
-    if i == 2
+    if i == 1
       item
     else
       item + 's'
