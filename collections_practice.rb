@@ -48,7 +48,7 @@ end
 
 def add_s(arr)
   x = 0
-  arr.collect do |i|
+  arr.each_with_index.collect do |item, i|
     x+=1
 
     if x == 2
