@@ -47,14 +47,14 @@ def sum_array(arr)
 end
 
 def add_s(arr)
-  x = 0
-  arr.collect do |i|
-    x+=1
+  # x = 0
+  arr.each_with_index.collect do |item, i|
+    # x+=1
 
-    if x == 2
-      i
+    if i == 1
+      item
     else
-      i + 's'
+      item + 's'
     end
 
   end
